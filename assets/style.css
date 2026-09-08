@@ -431,3 +431,41 @@ section { padding-block: 68px; }
   .hero-grid { gap: 28px; }
   .hero-media { order: -1; }
 }
+
+/* ---- 公司介绍页（数据源 src/about-intro.html，ci- 前缀隔离避免冲突）---- */
+.ci-section { margin-bottom: 44px; }
+.ci-section-title {
+  font-size: 26px; font-weight: 700; color: #1a1a1a;
+  margin-bottom: 18px; padding-inline-start: 16px;
+  border-inline-start: 5px solid #c9a96e; line-height: 1.4;
+}
+.ci-section-text { font-size: 15px; color: #555; margin-bottom: 16px; text-align: justify; line-height: 1.9; }
+.ci-highlights { display: flex; gap: 20px; margin: 24px 0; flex-wrap: wrap; }
+.ci-highlight-card { flex: 1 1 140px; background: #faf8f5; border-radius: 10px; padding: 24px 20px; text-align: center; border: 1px solid #eee; }
+.ci-highlight-card .ci-num { font-size: 32px; font-weight: 700; color: #c9a96e; }
+.ci-highlight-card .ci-label { font-size: 13px; color: #888; margin-top: 6px; }
+.ci-product-grid { display: flex; gap: 20px; margin-top: 20px; flex-wrap: wrap; }
+.ci-product-card { flex: 1 1 240px; background: #fff; border-radius: 10px; overflow: hidden; border: 1px solid #eee; }
+.ci-product-card .ci-pc-body { padding: 20px; }
+.ci-product-card h4 { font-size: 17px; color: #1a1a1a; margin-bottom: 10px; }
+.ci-product-card p { font-size: 13px; color: #777; line-height: 1.7; }
+.ci-product-card ul { list-style: none; margin-top: 10px; }
+.ci-product-card li { font-size: 13px; color: #888; padding: 3px 0 3px 16px; position: relative; }
+.ci-product-card li::before { content: "▸"; position: absolute; left: 0; color: #c9a96e; }
+.ci-full-img { width: 100%; border-radius: 10px; margin: 16px 0; display: block; }
+.ci-cert-row { display: flex; gap: 16px; flex-wrap: wrap; margin-top: 20px; }
+.ci-cert-badge { background: linear-gradient(135deg, #c9a96e, #b8860b); color: #fff; padding: 12px 28px; border-radius: 30px; font-size: 15px; font-weight: 600; letter-spacing: 1px; box-shadow: 0 2px 8px rgba(201,169,110,0.3); }
+.ci-feature-list { list-style: none; margin-top: 12px; }
+.ci-feature-list li { padding: 10px 0 10px 28px; position: relative; font-size: 15px; color: #555; border-bottom: 1px dashed #eee; }
+.ci-feature-list li::before { content: "✓"; position: absolute; left: 0; top: 10px; color: #c9a96e; font-weight: 700; font-size: 16px; }
+.ci-quote-box { background: linear-gradient(135deg, #faf8f5, #f3ede4); border-radius: 10px; padding: 30px; margin: 24px 0; text-align: center; border-inline-start: 4px solid #c9a96e; }
+.ci-quote-box p { font-size: 18px; color: #8a6d3b; font-style: italic; }
+.ci-process-row { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
+.ci-process-step { flex: 1 1 120px; text-align: center; position: relative; }
+.ci-process-step .ci-circle { width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 12px; background: linear-gradient(135deg, #c9a96e, #b8860b); color: #fff; font-size: 20px; font-weight: 700; line-height: 56px; }
+.ci-process-step h5 { font-size: 14px; color: #333; margin-bottom: 6px; }
+.ci-process-step p { font-size: 12px; color: #999; }
+.ci-process-step:not(:last-child)::after { content: "→"; position: absolute; inset-inline-end: -10px; top: 18px; color: #ccc; font-size: 20px; }
+@media (max-width: 700px) {
+  .ci-highlights, .ci-product-grid, .ci-process-row { flex-direction: column; }
+}
