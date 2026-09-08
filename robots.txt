@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pibitao1988-max.github.io/vosido-website/sitemap.xml

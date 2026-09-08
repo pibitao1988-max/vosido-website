@@ -1,5 +1,9 @@
 {
-  "buildCommand": "python build.py",
-  "outputDirectory": "dist",
-  "framework": "other"
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": false
+    }
+  ]
 }
