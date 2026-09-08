@@ -1,0 +1,5 @@
+{
+  "buildCommand": "python build.py",
+  "outputDirectory": "dist",
+  "framework": "other"
+}
