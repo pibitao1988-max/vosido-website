@@ -29,8 +29,9 @@ LANGS = ["en", "es", "pt", "fr", "de", "ru", "tr", "ar", "ja", "ko"]
 RTL = {"ar"}
 
 # Canonical origin used only for hreflang / canonical / sitemap absolute URLs.
-# TODO: confirm the real production domain, then rebuild.
-SITE_ORIGIN = "https://www.vosido.com"
+# Override with the SITE_ORIGIN env var (set in CI / Netlify / GitHub Actions)
+# so the deployed domain is correct without editing this file.
+SITE_ORIGIN = os.environ.get("SITE_ORIGIN", "https://www.vosido.com")
 
 def load_json(rel):
     """Read an editable data file from src/. Kept out of this script so the
