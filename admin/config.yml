@@ -13,6 +13,12 @@
 backend:
   name: git-gateway
   branch: main
+  # 若改用 GitHub Pages + GitHub OAuth App（不走 Netlify），把上面两行换成：
+  #   name: github
+  #   repo: pibitao1988-max/vosido-website
+  #   base_url: https://pibitao1988-max.github.io/vosido-website
+  #   auth_endpoint: /api/auth        # 需自备 token 代理
+  # 详见 DEPLOY.md「方案 B」
 
 # Lets you log into /admin on a local dev server for testing.
 local_backend: true
