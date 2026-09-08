@@ -410,13 +410,18 @@ def build_home(lang):
 
     body = (
         '<section class="hero">\n'
-        '  <div class="wrap">\n'
-        '    <h1>%s</h1>\n'
-        '    <p class="lead">%s</p>\n'
-        '    <div class="actions">\n'
-        '      <a class="btn btn-primary" href="%s">%s</a>\n'
-        '      <a class="btn btn-ghost" href="%s">%s</a>\n'
+        '  <div class="wrap hero-grid">\n'
+        '    <div class="hero-copy">\n'
+        '      <h1>%s</h1>\n'
+        '      <p class="lead">%s</p>\n'
+        '      <div class="actions">\n'
+        '        <a class="btn btn-primary" href="%s">%s</a>\n'
+        '        <a class="btn btn-ghost" href="%s">%s</a>\n'
+        '      </div>\n'
         '    </div>\n'
+        '    <div class="hero-media">'
+        '<img src="../assets/img/hero.jpg" alt="%s" decoding="async">'
+        '</div>\n'
         '  </div>\n'
         '</section>\n'
         '<section class="stats"><div class="wrap"><div class="grid">%s</div></div></section>\n'
@@ -449,6 +454,7 @@ def build_home(lang):
         % (e(t(lang, "hero_title")), e(t(lang, "hero_sub")),
            e(href(lang, lang, "products.html")), e(t(lang, "hero_cta1")),
            e(href(lang, lang, "contact.html")), e(t(lang, "hero_cta2")),
+           e(t(lang, "tagline")),
            stats,
            e(t(lang, "feat_title")), e(t(lang, "feat_sub")), feats,
            e(t(lang, "cat_title")), e(t(lang, "cat_sub")), cats,
@@ -826,10 +832,15 @@ def main():
     shutil.copytree(os.path.join(SRC, "assets"), os.path.join(DIST, "assets"),
                     dirs_exist_ok=True)
 
-    # Decap CMS admin panel -> served at /admin/ on the live site.
-    admin_src = os.path.join(ROOT, "admin")
-    if os.path.isdir(admin_src):
-        shutil.copytree(admin_src, os.path.join(DIST, "admin"), dirs_exist_ok=True)
+    # 两个后台并存，按托管环境选用：
+    #   /admin/ = PHP 图片后台（自有域名 + 虚拟主机：登录改首图/产品图，改完即刻生效）
+    #   /cms/   = Decap CMS（Netlify / GitHub 这类 Git 工作流环境）
+    php_admin = os.path.join(ROOT, "php-admin")
+    if os.path.isdir(php_admin):
+        shutil.copytree(php_admin, os.path.join(DIST, "admin"), dirs_exist_ok=True)
+    decap_src = os.path.join(ROOT, "admin")
+    if os.path.isdir(decap_src):
+        shutil.copytree(decap_src, os.path.join(DIST, "cms"), dirs_exist_ok=True)
 
     # Root index redirects to the default language directory.
     with open(os.path.join(DIST, "index.html"), "w", encoding="utf-8") as f:

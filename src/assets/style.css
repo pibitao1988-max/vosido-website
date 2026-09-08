@@ -412,3 +412,22 @@ section { padding-block: 68px; }
   .wa-btn { padding: 11px 16px; font-size: 14px; }
   .wa-panel { min-width: 0; }
 }
+
+/* ---- Hero 首图（后台可替换 assets/img/hero.jpg）-------------------------
+   用 aspect-ratio + object-fit:cover，任意尺寸的首图都会被裁成统一 16:9，
+   不会因客户上传的图片比例不同而撑破排版。flex 布局在 RTL 下自动镜像。 */
+.hero-grid { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
+.hero-copy { flex: 1 1 380px; min-width: 0; }
+.hero-media { flex: 1 1 340px; min-width: 0; }
+.hero-media img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  border-radius: 14px;
+  background: var(--surface);
+}
+@media (max-width: 900px) {
+  .hero-grid { gap: 28px; }
+  .hero-media { order: -1; }
+}
