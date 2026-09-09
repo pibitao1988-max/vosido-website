@@ -49,7 +49,7 @@
   <div class="wrap header-inner">
     <a class="logo" href="index.html"><span class="mark">VS</span><span>VOSIDO<small>Fabricante professionnel de ferramentas para cabelo</small></span></a>
     <button class="nav-toggle" type="button">&#9776;</button>
-    <nav class="nav"><a href="index.html">Início</a><a class="active" href="products.html">Produtos</a><a href="about.html">Sobre</a><a href="contact.html">Contato</a></nav>
+    <nav class="nav"><a href="index.html">Início</a><a class="active" href="products.html">Produtos</a><a href="about.html">Sobre</a><a href="media.html">Mídia</a><a href="contact.html">Contato</a></nav>
     <div class="lang-switch">
   <button type="button" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true">&#9776;</span> Português</button>
   <ul><li><a data-lang="en" href="../en/product-hair-dryer.html" hreflang="en" lang="en">English</a></li><li><a data-lang="es" href="../es/product-hair-dryer.html" hreflang="es" lang="es">Español</a></li><li><a class="current" data-lang="pt" href="product-hair-dryer.html" hreflang="pt" lang="pt">Português</a></li><li><a data-lang="fr" href="../fr/product-hair-dryer.html" hreflang="fr" lang="fr">Français</a></li><li><a data-lang="de" href="../de/product-hair-dryer.html" hreflang="de" lang="de">Deutsch</a></li><li><a data-lang="ru" href="../ru/product-hair-dryer.html" hreflang="ru" lang="ru">Русский</a></li><li><a data-lang="tr" href="../tr/product-hair-dryer.html" hreflang="tr" lang="tr">Türkçe</a></li><li><a data-lang="ar" href="../ar/product-hair-dryer.html" hreflang="ar" lang="ar">العربية</a></li><li><a data-lang="ja" href="../ja/product-hair-dryer.html" hreflang="ja" lang="ja">日本語</a></li><li><a data-lang="ko" href="../ko/product-hair-dryer.html" hreflang="ko" lang="ko">한국어</a></li></ul>
@@ -68,7 +68,13 @@
       <p>Motor brushless de 110.000 RPM seca o cabelo em metade do tempo. A emissão iônica reduz o frizz, e a plataforma 110-240V é fornecida com plugues EUA, UE, Reino Unido ou Austrália.</p>
       <h3>Especificações</h3>
       <table class="spec-table"><tbody><tr><th>Modelo</th><td>LV-HD01</td></tr><tr><th>Potência</th><td>1600 - 1800 W</td></tr><tr><th>Voltagem</th><td>110 - 240 V, 50 / 60 Hz</td></tr><tr><th>Motor</th><td>110,000 RPM brushless</td></tr><tr><th>Temperatura</th><td>3 heat / 2 speed + cool shot</td></tr><tr><th>Cabo</th><td>2.5 m salon cord</td></tr><tr><th>Plugue</th><td>US / EU / UK / AU</td></tr><tr><th>Garantia</th><td>24 months</td></tr><tr><th>Qtd. mínima</th><td>500 pcs</td></tr><tr><th>Prazo de entrega</th><td>25 - 30 days</td></tr></tbody></table>
-      <p style="margin-top:24px"><a class="btn btn-primary" href="contact.html">Solicitar orçamento</a></p>
+      <div class="order-box">
+        <div class="ob-price"><span class="ob-price-label">Preço</span><span class="ob-price-val">$19.90</span></div>
+        <div class="ob-row"><label>Qtd.</label><input type="number" id="det-qty" class="ob-qty" value="500" min="500" step="1"></div>
+        <button type="button" class="btn btn-primary ob-add" data-add data-slug="hair-dryer" data-ikey="dryer" data-price="19.9" data-name="Secador iônico de alta velocidade" data-moq="500 pcs">Adicionar ao carrinho</button>
+        <p class="ob-note">Ainda não há pagamento online. Envie seu pedido e nossa equipe de vendas confirmará o preço exato, o MOQ e o prazo de entrega.</p>
+      </div>
+      <p style="margin-top:18px"><a class="btn btn-ghost" href="contact.html">Solicitar orçamento</a></p>
     </div>
   </div>
 </section>
@@ -88,28 +94,37 @@
 <section style="background:var(--surface)">
   <div class="wrap">
     <div class="section-head"><h2>Produtos relacionados</h2></div>
-    <div class="grid-3"><a class="prod-card" data-cat="curler" href="product-curling-iron.html">
-  <div class="thumb"><img src="../assets/img/product/curling-iron-01.jpg" alt="Modelador de cachos profissional" width="1000" height="750" loading="eager"></div>
-  <div class="body">
-    <h3>Modelador de cachos profissional</h3>
-    <p>Barril de cerâmica e turmalina atinge a temperatura de trabalho em 30 segundos, com cinco ajustes de 80 a 230 graus para todos os tipos de cabelo.</p>
-    
-  </div>
-</a><a class="prod-card" data-cat="straightener" href="product-hair-straightener.html">
-  <div class="thumb"><img src="../assets/img/product/hair-straightener-01.jpg" alt="Chapinha de titânio" width="1000" height="750" loading="eager"></div>
-  <div class="body">
-    <h3>Chapinha de titânio</h3>
-    <p>Placas flutuantes de titânio com aquecimento MCH entregam calor uniforme em uma única passada, reduzindo o tempo de modelagem e os danos térmicos em cabelos grossos.</p>
-    
-  </div>
-</a><a class="prod-card" data-cat="brush" href="product-straightening-brush.html">
-  <div class="thumb"><img src="../assets/img/product/straightening-brush-01.jpg" alt="Escova alisadora aquecida" width="1000" height="750" loading="eager"></div>
-  <div class="body">
-    <h3>Escova alisadora aquecida</h3>
-    <p>Cerdas aquecidas alisam enquanto desembaraçam. O SKU que mais cresce no varejo de salões, com pontas anti-queimadura para segurança do consumidor.</p>
-    
-  </div>
-</a></div>
+    <div class="grid-3"><div class="prod-card" data-cat="curler">
+  <a class="pc-link" href="product-curling-iron.html">
+    <div class="thumb"><img src="../assets/img/product/curling-iron-01.jpg" alt="Modelador de cachos profissional" width="1000" height="750" loading="eager"></div>
+    <div class="body">
+      <h3>Modelador de cachos profissional</h3>
+      <p>Barril de cerâmica e turmalina atinge a temperatura de trabalho em 30 segundos, com cinco ajustes de 80 a 230 graus para todos os tipos de cabelo.</p>
+      
+    </div>
+  </a>
+  <div class="pc-foot"><div class="pc-price"><span class="pc-price-val">$12.50</span><span class="pc-price-unit">Preço unitário</span></div><button type="button" class="btn-add" data-add data-slug="curling-iron" data-ikey="curler" data-price="12.5" data-name="Modelador de cachos profissional" data-moq="500 pcs">Adicionar ao carrinho</button></div>
+</div><div class="prod-card" data-cat="straightener">
+  <a class="pc-link" href="product-hair-straightener.html">
+    <div class="thumb"><img src="../assets/img/product/hair-straightener-01.jpg" alt="Chapinha de titânio" width="1000" height="750" loading="eager"></div>
+    <div class="body">
+      <h3>Chapinha de titânio</h3>
+      <p>Placas flutuantes de titânio com aquecimento MCH entregam calor uniforme em uma única passada, reduzindo o tempo de modelagem e os danos térmicos em cabelos grossos.</p>
+      
+    </div>
+  </a>
+  <div class="pc-foot"><div class="pc-price"><span class="pc-price-val">$11.80</span><span class="pc-price-unit">Preço unitário</span></div><button type="button" class="btn-add" data-add data-slug="hair-straightener" data-ikey="straightener" data-price="11.8" data-name="Chapinha de titânio" data-moq="500 pcs">Adicionar ao carrinho</button></div>
+</div><div class="prod-card" data-cat="brush">
+  <a class="pc-link" href="product-straightening-brush.html">
+    <div class="thumb"><img src="../assets/img/product/straightening-brush-01.jpg" alt="Escova alisadora aquecida" width="1000" height="750" loading="eager"></div>
+    <div class="body">
+      <h3>Escova alisadora aquecida</h3>
+      <p>Cerdas aquecidas alisam enquanto desembaraçam. O SKU que mais cresce no varejo de salões, com pontas anti-queimadura para segurança do consumidor.</p>
+      
+    </div>
+  </a>
+  <div class="pc-foot"><div class="pc-price"><span class="pc-price-val">$13.60</span><span class="pc-price-unit">Preço unitário</span></div><button type="button" class="btn-add" data-add data-slug="straightening-brush" data-ikey="brush" data-price="13.6" data-name="Escova alisadora aquecida" data-moq="500 pcs">Adicionar ao carrinho</button></div>
+</div></div>
   </div>
 </section>
 <section class="cta-band">
@@ -132,6 +147,7 @@
       <div><h4>Produtos</h4><ul><li><a href="product-hair-dryer.html">Secador iônico de alta velocidade</a></li><li><a href="product-curling-iron.html">Modelador de cachos profissional</a></li><li><a href="product-hair-straightener.html">Chapinha de titânio</a></li><li><a href="product-straightening-brush.html">Escova alisadora aquecida</a></li></ul></div>
       <div><h4>Empresa</h4><ul>
         <li><a href="about.html">Sobre</a></li>
+        <li><a href="media.html">Mídia</a></li>
         <li><a href="contact.html">Contato</a></li>
         <li><a href="privacy.html">Política de privacidade</a></li>
       </ul></div>
@@ -149,6 +165,24 @@
   </div>
 </footer>
 <div class="wa-float" id="wa-float"><button type="button" class="wa-btn wa-toggle" aria-expanded="false"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2 22l5.4-1.4c1.4.8 3 1.2 4.6 1.2 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/></svg><span>WhatsApp</span></button><div class="wa-panel"><a class="wa-item" href="https://wa.me/8618566779985" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2 22l5.4-1.4c1.4.8 3 1.2 4.6 1.2 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/></svg><span>+86 18566779985</span></a><a class="wa-item" href="https://wa.me/8618824268154" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2 22l5.4-1.4c1.4.8 3 1.2 4.6 1.2 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/></svg><span>+86 18824268154</span></a></div></div>
+<div class="cart-wrap" id="cart-wrap" data-wa="https://wa.me/8618566779985" data-email="pibitao1988@gmail.com" data-symbol="$" data-pos="before" data-l-remove="Remover" data-l-via-wa="Enviar via WhatsApp" data-l-via-email="Enviar por e-mail" data-m-order="Pedir este produto" data-m-qty="Qtd." data-m-unit="Preço unitário" data-m-total="Total">
+  <button type="button" class="cart-fab" id="cart-fab" aria-label="Carrinho de compras">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.2 12.2a1.5 1.5 0 0 0 1.5 1.3h9.3a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></svg>
+    <span class="cart-count" id="cart-count">0</span>
+  </button>
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-head"><h3>Carrinho de compras</h3><button type="button" class="cart-close" id="cart-close" aria-label="close">&times;</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty">Seu carrinho está vazio.</div>
+    <div class="cart-foot" id="cart-foot">
+      <div class="cart-total-row"><span>Subtotal</span><b id="cart-total">$0.00</b></div>
+      <button type="button" class="btn btn-primary cart-submit" id="cart-submit" disabled>Enviar pedido</button>
+      <button type="button" class="cart-clear-btn" id="cart-clear">Limpar</button>
+      <p class="cart-note">Ainda não há pagamento online. Envie seu pedido e nossa equipe de vendas confirmará o preço exato, o MOQ e o prazo de entrega.</p>
+    </div>
+  </aside>
+</div>
 <script src="../assets/app.js"></script>
 </body>
 </html>

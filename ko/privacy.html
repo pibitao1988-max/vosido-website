@@ -33,7 +33,7 @@
   <div class="wrap header-inner">
     <a class="logo" href="index.html"><span class="mark">VS</span><span>VOSIDO<small>헤어 스타일링 기기 전문 제조사</small></span></a>
     <button class="nav-toggle" type="button">&#9776;</button>
-    <nav class="nav"><a href="index.html">홈</a><a href="products.html">제품</a><a href="about.html">회사 소개</a><a href="contact.html">문의</a></nav>
+    <nav class="nav"><a href="index.html">홈</a><a href="products.html">제품</a><a href="about.html">회사 소개</a><a href="media.html">미디어</a><a href="contact.html">문의</a></nav>
     <div class="lang-switch">
   <button type="button" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true">&#9776;</span> 한국어</button>
   <ul><li><a data-lang="en" href="../en/privacy.html" hreflang="en" lang="en">English</a></li><li><a data-lang="es" href="../es/privacy.html" hreflang="es" lang="es">Español</a></li><li><a data-lang="pt" href="../pt/privacy.html" hreflang="pt" lang="pt">Português</a></li><li><a data-lang="fr" href="../fr/privacy.html" hreflang="fr" lang="fr">Français</a></li><li><a data-lang="de" href="../de/privacy.html" hreflang="de" lang="de">Deutsch</a></li><li><a data-lang="ru" href="../ru/privacy.html" hreflang="ru" lang="ru">Русский</a></li><li><a data-lang="tr" href="../tr/privacy.html" hreflang="tr" lang="tr">Türkçe</a></li><li><a data-lang="ar" href="../ar/privacy.html" hreflang="ar" lang="ar">العربية</a></li><li><a data-lang="ja" href="../ja/privacy.html" hreflang="ja" lang="ja">日本語</a></li><li><a class="current" data-lang="ko" href="privacy.html" hreflang="ko" lang="ko">한국어</a></li></ul>
@@ -67,6 +67,7 @@
       <div><h4>제품</h4><ul><li><a href="product-hair-dryer.html">고속 이온 헤어드라이어</a></li><li><a href="product-curling-iron.html">전문가용 컬링 아이언</a></li><li><a href="product-hair-straightener.html">티타늄 헤어 스트레이트너</a></li><li><a href="product-straightening-brush.html">가열식 스트레이트닝 브러시</a></li></ul></div>
       <div><h4>회사</h4><ul>
         <li><a href="about.html">회사 소개</a></li>
+        <li><a href="media.html">미디어</a></li>
         <li><a href="contact.html">문의</a></li>
         <li><a href="privacy.html">개인정보처리방침</a></li>
       </ul></div>
@@ -84,6 +85,24 @@
   </div>
 </footer>
 <div class="wa-float" id="wa-float"><button type="button" class="wa-btn wa-toggle" aria-expanded="false"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2 22l5.4-1.4c1.4.8 3 1.2 4.6 1.2 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/></svg><span>WhatsApp</span></button><div class="wa-panel"><a class="wa-item" href="https://wa.me/8618566779985" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2 22l5.4-1.4c1.4.8 3 1.2 4.6 1.2 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/></svg><span>+86 18566779985</span></a><a class="wa-item" href="https://wa.me/8618824268154" rel="noopener" target="_blank"><svg viewBox="0 0 24 24" width="21" height="21" fill="currentColor" aria-hidden="true"><path d="M12 2C6.5 2 2 6.3 2 11.6c0 1.9.6 3.7 1.6 5.2L2 22l5.4-1.4c1.4.8 3 1.2 4.6 1.2 5.5 0 10-4.3 10-9.6S17.5 2 12 2z"/></svg><span>+86 18824268154</span></a></div></div>
+<div class="cart-wrap" id="cart-wrap" data-wa="https://wa.me/8618566779985" data-email="pibitao1988@gmail.com" data-symbol="$" data-pos="before" data-l-remove="삭제" data-l-via-wa="WhatsApp으로 보내기" data-l-via-email="이메일로 보내기" data-m-order="이 제품 주문하기" data-m-qty="수량" data-m-unit="단가" data-m-total="합계">
+  <button type="button" class="cart-fab" id="cart-fab" aria-label="장바구니">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M2 3h3l2.2 12.2a1.5 1.5 0 0 0 1.5 1.3h9.3a1.5 1.5 0 0 0 1.5-1.2L21 7H6"/></svg>
+    <span class="cart-count" id="cart-count">0</span>
+  </button>
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-head"><h3>장바구니</h3><button type="button" class="cart-close" id="cart-close" aria-label="close">&times;</button></div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty">장바구니가 비어 있습니다.</div>
+    <div class="cart-foot" id="cart-foot">
+      <div class="cart-total-row"><span>소계</span><b id="cart-total">$0.00</b></div>
+      <button type="button" class="btn btn-primary cart-submit" id="cart-submit" disabled>주문 보내기</button>
+      <button type="button" class="cart-clear-btn" id="cart-clear">비우기</button>
+      <p class="cart-note">아직 온라인 결제는 불가합니다. 주문을 보내주시면 영업팀이 정확한 가격, MOQ, 납기를 확인해 드립니다.</p>
+    </div>
+  </aside>
+</div>
 <script src="../assets/app.js"></script>
 </body>
 </html>
